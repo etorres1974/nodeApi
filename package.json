@@ -5,9 +5,13 @@
   "author": "First Last <first.last@example.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "docker build . -t edu/node-api ",
+    "up": "docker run -p 49160:8080 -d edu/node-api",
+    "stop" : "docker rm -f "
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.16.1"
   }
 }

@@ -1,9 +1,7 @@
 https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
-docker build . -t <your username>/node-web-app
+npm run build
 
-docker run -p 49160:8080 -d <your username>/node-web-app
+npm run up
 
-docker ps 
-docker stop <container-id>
-docker rm <containerid> 
+http://localhost:49160/
